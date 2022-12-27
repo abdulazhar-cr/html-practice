@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice HTML</title>
+    <link rel="icon" href="butterfly.jpeg" type="image/any-icon">
+    <title>Form tag</title>
   </head>
+
   <body>
-    <p>Hello my first github commit</p>
+    <!-- <form action="https://www.google.com/search" method="get" target="_blank">
+      <input type="text" name="q" placeholder="Enter search text" />
+      <input type="submit" />
+    </form> -->
+    <form action="http://localhost:3004/api/v1/user" method="post">
+      First name:
+      <input type="text" name="first_name" maxlength="25" required /> <br />
+      Last name: <input type="text" name="lastName" maxlength="25" required />
+      <br />
+      User ID : <input type="text" name="user_id" /> <br />
+      Password: <input type="password" name="password" /> <br />
+      Mobile Number: <input type="number" /> <br />
+      Email : <input type="email" /><br />
+      Select the subjects <br />
+      <input type="checkbox" name="maths" value="on" checked="true" /> Maths
+      <input type="checkbox" name="physics" value="on" checked="true" /> Physics
+      <br />
+      Description:
+      <br />
+
+      Gender <br />
+      <input type="radio" name="gender" value="male" /> Male <br />
+      <input type="radio" name="gender" value="female" /> Female <br />
+
+      <textarea rows="5" cols="50" name="description">
+                    Enter description here...
+        </textarea
+      >
+      <br />
+      <br />
+
+      Select the Country
+      <select name="dropdown">
+        <option>India</option>
+        <option>USA</option>
+        <option>China</option>
+        <option>Japan</option>
+        <option>Russia</option>
+        <option selected>Saudi Arabia</option>
+      </select>
+      <br />
+      <br />
+
+      Select the subjects
+      <select name="selectSubjects" multiple>
+        <option selected>Physics</option>
+        <option selected>Chemestry</option>
+        <option>Maths</option>
+        <option>Biology</option>
+      </select>
+      <br />
+      <br />
+      <input type="file" name="fileupload" accept="image/*" />
+      <br />
+      <input type="submit" />
+      <br />
+
+      <input type="submit" name="submit" value="Submit" /> <br />
+
+      <input type="reset" name="reset" value="Reset" /> <br />
+
+      <input type="button" name="ok" value="OK" /> <br />
+      <input type="hidden" name="pagename" value="10" />
+      <input
+        type="image"
+        name="imagebutton"
+        height="50"
+        width="50"
+        src="./butterfly.jpeg"
+      />
+      <br />
+    </form>
+    <marquee
+      direction="right"
+      scrolldelay="50"
+      scrollamount="100"
+      behavior="alternate"
+    >
+      One or more lines or text message or imagesfsdfs sfgfsgfgsfgfs
+      gssfssfdfsfs
+      <img src="./images/flower.jpeg" height="50" width="50" />
+    </marquee>
   </body>
 </html>
